@@ -11,19 +11,23 @@
 </head>
 
 <body>
+    <!-- 아이콘 -->
     <div id="menuIcon" onclick="openMenu(this)">
         <i class="fa fa-plus"></i>
     </div>
+
+    <!-- 아코디언 -->
     <div class="acc">선택</div>
     <div class="text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem repellat at delectus saepe laboriosam atque, voluptatibus debitis deleniti dolores non repellendus accusantium minus et porro quidem quia quibusdam doloremque.
     </div>
+
+    <!-- 탭 -->
     <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'London')">London</button>
         <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
         <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
     </div>
-    
     <div id="London" class="tabcontent">
     <h3>London</h3>
     <p>London is the capital city of England.</p>
@@ -38,6 +42,44 @@
     <h3>Tokyo</h3>
     <p>Tokyo is the capital of Japan.</p>
     </div>
+
+    <!-- 반응형 탑 네비 -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- 검색바 -->
+    <div class="topnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 사이드바 -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="main">
+        <span onclick="openNav()">&#9776; open</span>
+    </div>
+
     <script src="/js/function.js"></script>
 </body>
 
