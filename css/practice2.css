@@ -1,0 +1,94 @@
+/* 사이드바 Hover */
+#mySidenav a {
+    z-index: 100;
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+#mySidenav a:hover {
+    left: 0;
+}
+#about {
+    top: 20px;
+    background-color: #04AA6D;
+    }
+#blog {
+    top: 80px;
+    background-color: #2196F3;
+}
+#projects {
+    top: 140px;
+    background-color: #f44336;
+}
+#contact {
+    top: 200px;
+    background-color: #555
+}
+
+/* 가로 네비바 스크롤 */
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+/* 탑네비 */
+.topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.topnav-right {
+    float: right;
+}
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+        float: none;
+        display: block;
+    }
+    .topnav-centered a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
