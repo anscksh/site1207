@@ -5,15 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/stylesheet.css">
     <title>Practice Java Script</title>
 </head>
 
 <body>
-    <div class="menuIcon" onclick="openMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+    <div id="menuIcon" onclick="openMenu(this)">
+        <i class="fa fa-plus"></i>
+    </div>
+    <div class="acc">선택</div>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem repellat at delectus saepe laboriosam atque, voluptatibus debitis deleniti dolores non repellendus accusantium minus et porro quidem quia quibusdam doloremque.
+    </div>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+    
+    <div id="London" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    </div>
+    
+    <div id="Paris" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p> 
+    </div>
+    
+    <div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
     </div>
     <script src="/js/function.js"></script>
 </body>
